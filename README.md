@@ -1,5 +1,5 @@
 <p align="right" height="500px">
-  <img src="/images/logoreadme.jpg" alt="logo"/>
+  <img src="https://github.com/Random003/eComerce/blob/master/public/images/logoreadme.jpg" alt="logo"/>
 </p>
 
 # **Ejercitación HTML y CSS - Clase Sincrónica**
