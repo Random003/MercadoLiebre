@@ -1,6 +1,3 @@
-<p align="right">
-  <img height="500px" src="https://github.com/Random003/eComerce/blob/master/public/images/logoreadme.jpg" alt="logo"/>
-</p>
 
 # **Ejercitación HTML y CSS - Clase Sincrónica**
 
