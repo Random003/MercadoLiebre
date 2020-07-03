@@ -1,0 +1,54 @@
+header {
+    background-color: #EAC926;
+}
+
+/* body{
+    background-color: #ebebeb;
+} */
+
+#titulares {
+   font-size: 24px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.precios {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descripciones {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+}

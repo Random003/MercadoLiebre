@@ -1,6 +1,9 @@
 
-# **Ejercitación HTML y CSS - Clase Sincrónica**
+# **Ejercitación de Clase Sincrónica de Curso "Full Stack" en Digital House**
 
-## Componentes:
+## Contedio de las clases:
 
-- 30/6: Primera parte, Vista Mobile de aplicación.
+Fecha | Descripción | Herramienta
+----- | ----------- | -----------
+30/6 | Estructura base en mobile de aplicación. | HTML, Express.
+2/7 | Agregar CSS en vista mobile | CSS
