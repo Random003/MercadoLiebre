@@ -2,11 +2,20 @@ header {
     background-color: #EAC926;
 }
 
-/* body{
+body{
     background-color: #ebebeb;
-} */
+}
 
-#titulares {
+div{
+    background-color: white;
+}
+
+#basado {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ofertas {
    font-size: 24px;
    font-family: 'Roboto', sans-serif;
 }
@@ -30,6 +39,7 @@ header {
 p {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    text-align: justify;
 }
 
 ul {
@@ -46,8 +56,10 @@ h1 {
 
 h3 {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 h6 {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
