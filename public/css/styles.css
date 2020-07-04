@@ -4,6 +4,7 @@ header {
 
 body{
     background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
 }
 
 div{
@@ -12,33 +13,27 @@ div{
 
 #basado {
     font-size: 24px;
-    font-family: 'Roboto', sans-serif;
 }
 
 #ofertas {
    font-size: 24px;
-   font-family: 'Roboto', sans-serif;
 }
 
 .precios {
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .descuentos{
     font-size: 16px;
     color: #39b54a;
-    font-family: 'Roboto', sans-serif;
 }
 
 .descripciones {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
 }
 
 p {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
     text-align: justify;
 }
 
@@ -47,19 +42,17 @@ ul {
 }
 
 li{
-    font-family: 'Roboto', sans-serif;
+
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 h6 {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
