@@ -23,7 +23,10 @@ app.get("/login", (req, res) => {
 
 // para que ande el post 
 app.post("/", (req, res) => {
-    res.send(req.body);
+    // para que haga el JSON dejar este solamente
+    // res.send(req.body);
+    // para que mande directamente a la pagina principal dejar solo este
+    res.sendFile(__dirname + "/views/index.html");
 });
 
 app.post("/register", (req, res) => {

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/logo.png">
+    <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <title>Ingresá</title>
+    <title>¡Hola! Ingresá tu usuario</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,6 @@
         <h6>Lugar para poner la barra de búsqueda</h6>
         <h3><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
         <ul>
-            <!-- para linkear en la misma pagina donde dice ofertas -->
             <li>Ofertas</a></li>
             <li>Tiendas Oficiales</li>
             <li>Vender</li>
@@ -35,8 +34,8 @@
     <section>
         <img height="75x" src="/images/img-home-banner.jpg" alt="Banner">
 
-        <!-- ver de poner post en vez de get, deberia ser asi y no en post -->
-        <form action="/" method="GET">
+        <!-- DEPENDIENDO QUE QUIERA VER EL JSON DE LOS DATOS O LA PAGINA PRINCIPAL MODIFICAR EN EL APP.JS LA LINEA DE app.post("/", COMO DICE AHI -->
+        <form action="/" method="POST">
             <p>
                 <input type="text" name="username" id="username" placeholder="Nombre de Usuario">
             </p>
