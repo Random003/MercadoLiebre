@@ -1,10 +1,15 @@
-header {
-    background-color: #EAC926;
-}
 
 body{
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+footer{
+    color: #666;
 }
 
 div{
@@ -37,12 +42,17 @@ p {
     text-align: justify;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 ul {
     list-style-type: none;
 }
 
 li{
-
+    
 }
 
 h1 {
@@ -55,4 +65,10 @@ h3 {
 
 h6 {
     text-align: center;
+}
+
+
+/* pagina register.html */
+.regnegrita {
+    font-weight: bold;
 }

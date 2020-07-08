@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <title>Registro</title>
+    <title>Creá tu Cuenta</title>
 </head>
 <body>
     <header>
-        <h1><img src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></h1>
+        <h1><a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a></h1>
         <h6>Lugar para poner la barra de búsqueda</h6>
         <h3><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
         <ul>
@@ -24,9 +24,9 @@
         </ul>
     
         <ul>
-            <li><a href="/register">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+            <li><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></li>
             <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-            <li>Mis compras <i class="fas fa-shopping-basket"></i></li>
+            <li>Mis Compras <i class="fas fa-shopping-basket"></i></li>
         </ul>
     </header>
 
@@ -43,7 +43,7 @@
                 <input type="text" name="username" id="username" placeholder="Nombre de Usuario">
             </p>
             <p>
-                <input type="email" name="mail" id="mail" placeholder="email">
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
             </p>
             <p>
                 <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
@@ -52,31 +52,37 @@
 
             <p>
                 <input type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio">
+            </p><br>
+
+            <p>
+                <label for="perfilUsuario" class="regnegrita">Perfil del Usuario</label>
+                <p><label><input type="radio" name="comprador" value="comprador" id="">Comprador</label></p>
+                <p><label><input type="radio" name="vendedor" value="vendedor" id="">Vendedor</label></p>
+            </p><br>
+
+            <p>
+                <label for="intereses" class="regnegrita">Categorías de Interés</label>
+                <p><label><input type="checkbox">Electro</label></p>
+                <p><label><input type="checkbox">Moda</label></p>
+                <p><label><input type="checkbox">Hogar</label></p>
+                <p><label><input type="checkbox">Juguetería</label></p>
+                <p><label><input type="checkbox">Vida Sana</label></p>
+            </p><br>
+
+            <p>
+                <label for="fotoUsuario" class="regnegrita">Foto de Usuario</label><br><br>
+                <button type="menu">Seleccionar archivo</button>
+                <label for="">No se eligió archivo</label> 
             </p>
 
             <p>
-                <label for="perfilUsuario">Perfil del Usuario</label>
-                <p><input type="radio" name="comprador" value="comprador" id="">Comprador</p>
-                <p><input type="radio" name="" value="" id="">Vendedor</p>
+                <input type="password" name="password" id="password" placeholder="Contraseña"><br>
+                <input type="password" name="password" id="password" placeholder="Confirmar Contraseña">
             </p>
-
-            <p>
-                <label for="intereses">Intereses</label>
-                <p><input type="checkbox">Electro</p>
-            </p>
-
-
-
-
-            <p>
-                <input type="password" name="password" id="password" placeholder="Elegí tu contraseña">
-            </p>
-
-
-
 
             <p>
                 <button type="submit">Enviar</button> 
+                <button type="reset">Borrar</button>
             </p>
         </form>
 
