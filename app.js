@@ -21,6 +21,22 @@ app.get("/login", (req, res) => {
     res.sendFile(__dirname + "/views/login.html");
 });
 
+app.get("/cart", (req, res) => {
+    res.sendFile(__dirname + "/views/cart.html");
+});
+
+app.get("/help", (req, res) => {
+    res.sendFile(__dirname + "/views/help.html");
+});
+
+app.get("/oficialStores", (req, res) => {
+    res.sendFile(__dirname + "/views/oficialStores.html");
+});
+
+app.get("/sell", (req, res) => {
+    res.sendFile(__dirname + "/views/sell.html");
+});
+
 // para que ande el post 
 app.post("/", (req, res) => {
     // para que haga el JSON dejar este solamente
@@ -29,13 +45,13 @@ app.post("/", (req, res) => {
     res.sendFile(__dirname + "/views/index.html");
 });
 
-app.post("/register", (req, res) => {
-    res.send(req.body);
-});
+// app.post("/register", (req, res) => {
+//     res.send(req.body);
+// });
 
-app.post("/login", (req, res) => {
-    res.send(req.body);
-});
+// app.post("/login", (req, res) => {
+//     res.send(req.body);
+// });
 
 // para abrir el listen en el puerto determinado
 app.listen(4001, () => { console.log("Código funcionando y escuchando en el puerto 4001;  igual recorda de colocar -npm run startcode- y despues coloca -localhost/4001- en el navegador por favor.")})
