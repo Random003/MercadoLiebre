@@ -37,6 +37,10 @@ app.get("/sell", (req, res) => {
     res.sendFile(__dirname + "/views/sell.html");
 });
 
+app.get("*", (req, res) => {
+    res.status(404).sendFile(__dirname + "/views/404.html");
+});
+
 // para que ande el post 
 app.post("/", (req, res) => {
     // para que haga el JSON dejar este solamente
