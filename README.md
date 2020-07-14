@@ -9,7 +9,9 @@
 
 # **Ejercitación e-comerce de Clases Sincrónicas de Curso "Full Stack" en Digital House** <br>
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Random003/MercadoLiebre/master/public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"/>
+</p>
 
 ## Contenido tratado en las clases:
 
