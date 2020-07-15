@@ -13,9 +13,9 @@
   <img width="500px" src="https://raw.githubusercontent.com/Random003/MercadoLiebre/master/public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"/>
 </p>
 
-<div align="center">
-## Contenido tratado en las clases:
-</div>
+
+## <div align="center"> Contenido tratado en las clases: </div>
+
 
 Fecha | Descripción | Herramientas
 ----- | ----------- | -----------
