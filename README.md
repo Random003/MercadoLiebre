@@ -13,9 +13,10 @@
   <img width="500px" src="https://raw.githubusercontent.com/Random003/MercadoLiebre/master/public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"/>
 </p>
 
-## Contenido tratado en las clases:
-
 <div align="center">
+## Contenido tratado en las clases:
+</div>
+
 Fecha | Descripción | Herramientas
 ----- | ----------- | -----------
 30/6 | Estructura base en mobile de aplicación | HTML, Express
@@ -23,4 +24,3 @@ Fecha | Descripción | Herramientas
 7/7 | Formularios | HTML
 14/7 | Organizando elementos | HTML Y CSS
 16/7 |  |
-</div>
