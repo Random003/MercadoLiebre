@@ -15,6 +15,7 @@
 
 ## Contenido tratado en las clases:
 
+<div align="center">
 Fecha | Descripción | Herramientas
 ----- | ----------- | -----------
 30/6 | Estructura base en mobile de aplicación | HTML, Express
@@ -22,3 +23,4 @@ Fecha | Descripción | Herramientas
 7/7 | Formularios | HTML
 14/7 | Organizando elementos | HTML Y CSS
 16/7 |  |
+</div>
