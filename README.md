@@ -7,14 +7,14 @@
 </p>
 
 
-# **Ejercitación e-comerce de Clases Sincrónicas de Curso "Full Stack" en Digital House** <br>
+# ** <div align="center">Ejercitación e-comerce de Clases Sincrónicas de Curso "Full Stack" en Digital House</div> ** <br>
 
 <p align="center">
   <img width="500px" src="https://raw.githubusercontent.com/Random003/MercadoLiebre/master/public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre"/>
-</p>
+</p> <br>
 
 
-## <div align="center"> Contenido tratado en las clases: </div>
+## <div align="center"> Contenido tratado en las clases: </div> <br>
 
 
 Fecha | Descripción | Herramientas
