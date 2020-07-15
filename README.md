@@ -20,4 +20,5 @@ Fecha | Descripción | Herramientas
 30/6 | Estructura base en mobile de aplicación | HTML, Express
 2/7 | Agregar CSS en vista mobile | CSS
 7/7 | Formularios | HTML
-14/7 |  |
+14/7 | Organizando elementos | HTML Y CSS
+16/7 |  |

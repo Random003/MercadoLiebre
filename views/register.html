@@ -12,101 +12,114 @@
 </head>
 <body>
     <header>
-        <h1><a href="/"><img src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a></h1>
-        <h6>Lugar para poner la barra de búsqueda</h6>
+        <h1><a href="/"><img class="logoMeli" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a></h1>
+          
+        <input class="form-control" type="text" placeholder="Buscar productos, marcas y más..." aria-label="Search"><br>
+        <span class="icoLu"><i class="fas fa-search"></i></span>
+  
         <h3><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
-        <ul>
+  
+  
+  
+        <nav id="menu">
+          <button type="menu" id="butoMenu"><i class="fas fa-bars"></i></button>
+        </nav>
+        
+        <!-- TIENE QUE ESTAR EN HIDDEN LA BARRA DE NAVEGACIÓN -->
+        <!-- <nav hidden> -->
+        <nav>  
+          <ul>
             <li>Ofertas</a></li>
             <li><a href="/oficialStores">Tiendas Oficiales</a></li>
             <li><a href="/sell">Vender</a></li>
             <li><a href="/help">Ayuda</a></li>
-        </ul>
-    
-        <ul>
+          </ul>
+        
+          <ul>
             <li><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></li>
             <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
             <li><a href="/cart">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
-        </ul>
-    </header>
+          </ul>
+        </nav>
+      </header>
 
-    
 
     <main>
-        <img height="75x" src="/images/img-home-banner.jpg" alt="Banner">
-
         <!-- DEPENDIENDO QUE QUIERA VER EL JSON DE LOS DATOS O LA PAGINA PRINCIPAL MODIFICAR EN EL APP.JS LA LINEA DE app.post("/", COMO DICE AHI -->
-        <form action="/" method="POST">
+        <form class="cajaLogin" action="/" method="POST">
             <p>
-                <input type="text" name="fullName" id="fullName" placeholder="Nombre y Apellido">
+                <input class="ingreso" type="text" name="fullName" id="fullName" placeholder="Nombre y Apellido">
             </p>
             <p>
-                <input type="text" name="userName" id="userName" placeholder="Nombre de Usuario">
+                <input class="ingreso" type="text" name="userName" id="userName" placeholder="Nombre de Usuario">
             </p>
             <p>
-                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input class="ingreso" type="email" name="email" id="email" placeholder="E-mail">
             </p>
             <p>
-                <label for="fechaNacimiento">Fecha de Nacimiento</label><br>
-                <input type="date" name="birthDate" id="birthDate">
+                <label  for="fechaNacimiento">Fecha de Nacimiento</label><br>
+                <input class="ingreso" type="date" name="birthDate" id="birthDate">
             </p>
 
             <p>
-                <input type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio">
+                <input class="ingreso" type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio">
             </p><br>
 
             <p>
                 <label for="perfilUsuario" class="regnegrita">Perfil del Usuario</label>
-                <p><label><input type="radio" name="perfilUsuario" value="comprador" id="comprador">Comprador</label></p>
-                <p><label><input type="radio" name="perfilUsuario" value="vendedor" id="vendedor">Vendedor</label></p>
+                <p><label><input class="ingreso" type="radio" name="perfilUsuario" value="comprador" id="comprador">Comprador</label></p>
+                <p><label><input class="ingreso" type="radio" name="perfilUsuario" value="vendedor" id="vendedor">Vendedor</label></p>
             </p><br>
 
             <p>
                 <label for="intereses" class="regnegrita">Categorías de Interés</label>
                 <!-- NAME es lo que agrupa a todos los campos osea mismo nombre en todos los del label, VALUE es lo que vas a recibir yo del otro lado como desarrollador, ID es lo que usas para el label osea interacción y javascript, TYPE es el tipo de elemento que se va a usar -->
-                <p><label><input type="checkbox" name="interes" value="electro" id="electro">Electro</label></p>
-                <p><label><input type="checkbox" name="interes" value="moda" id="moda">Moda</label></p>
-                <p><label><input type="checkbox" name="interes" value="hogar" id="hogar">Hogar</label></p>
-                <p><label><input type="checkbox" name="interes" value="jugueteria" id="jugueteria">Juguetería</label></p>
-                <p><label><input type="checkbox" name="interes" value="vidaSana" id="vidaSana">Vida Sana</label></p>
+                <p><label><input type="checkbox" name="interes" value="electro" id="electro" class="ingreso">Electro</label></p>
+                <p><label><input type="checkbox" name="interes" value="moda" id="moda" class="ingreso">Moda</label></p>
+                <p><label><input type="checkbox" name="interes" value="hogar" id="hogar" class="ingreso">Hogar</label></p>
+                <p><label><input type="checkbox" name="interes" value="jugueteria" id="jugueteria" class="ingreso">Juguetería</label></p>
+                <p><label><input type="checkbox" name="interes" value="vidaSana" id="vidaSana"class="ingreso">Vida Sana</label></p>
             </p><br>
 
             <p>
                 <label for="fotoUsuario" class="regnegrita">Foto de Usuario</label><br><br>
-                <input type="file" id="foto" name="foto"></input> 
+                <input type="file" id="foto" name="foto" ></input> 
             </p>
 
             <p>
-                <input type="password" name="password" id="password" placeholder="Contraseña"><br>
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña">
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="ingreso"><br>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirmar Contraseña" class="ingreso">
             </p>
 
             <p>
-                <button type="submit">Enviar</button> 
-                <button type="reset">Borrar</button>
+                <button type="submit" class="ingreso" id="botonIngreso">Enviar</button> 
+                <button type="reset" class="ingreso" id="botonReseteo">Borrar</button>
             </p>
         </form>
-
     </main>
 
 
     
     <footer>
-        <i class="fas fa-credit-card" style="color: #1259c3"></i>
-        <h3>Pagá con tarjeta o en efectivo</h3>
-
-        <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p><br>
-
-        <i class="fas fa-gift" style="color: #1259c3"></i>
-        <h3>Envio gratis desde los $1.990</h3>
-
-        <p>Solo por estar registrado en MercadoLiebre tenés envios gratis en miles de productos. Es un beneficio de MercadoPuntos</p><br>
-
-        <i class="fas fa-user-shield" style="color: #1259c3"></i>
-        <h3>Seguridad de principio a fin</h3>
-
-        <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegido.</p><br>
-
-        <h6>Copiright © 1999-2019 MercadoLiebre S.R.L.</h6>
-    </footer>
+        <article class="piePagina">
+          <i class="fas fa-credit-card" style="color: #1259c3"></i>
+          <h3>Pagá con tarjeta o en efectivo</h3>
+          <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </article>
+  
+        <article class="piePagina">
+          <i class="fas fa-gift" style="color: #1259c3"></i>
+          <h3>Envio gratis desde los $1.990</h3>
+          <p>Solo por estar registrado en MercadoLiebre tenés envios gratis en miles de productos. Es un beneficio de MercadoPuntos</p>
+        </article>
+  
+        <article class="piePagina">
+          <i class="fas fa-user-shield" style="color: #1259c3"></i>
+          <h3>Seguridad de principio a fin</h3>
+          <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegido.</p>
+        </article>
+        
+        <div class="copyright">Copyright © 1999-2019 MercadoLiebre S.R.L.</div>
+      </footer>
 </body>
 </html>

@@ -1,38 +1,101 @@
 
+/* siempre hacer esto para que las cajas tengan el tamaño de la pantalla */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --default-padding: 0px;
+    --default-margin: 0px;
+}
+
+
+
+/* --------------------------------- */
+/* BODY  */
+
 body{
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+
+/* --------------------------------- */
+/* HEADER  */
+
 header {
     background-color: #EAC926;
 }
+
+.logoMeli {
+    width: 50%;   
+}
+
+.form-control {
+    width: 50%;
+}
+
+#menu {
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+#butoMenu {
+    background-color: #0044AA;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+/* AVERIGUAR PORQ NO SE CAMBIA DE COLOR MIENTRAS HAGO HOVER SOBRE EL BOTÓN EN FIREFOX Y SI EN SAFARI Y PORQ NO APARECEN IMÁGENES EN UNO Y OTRO SI!!!! */
+#butoMenu:hover {
+    background-color: #0022AA;
+}
+
+
+
+
+/* --------------------------------- */
+/* MAIN  */
 
 main {
     
 }
 
-footer{
-    color: #666;
+.homeBanner {
+    width: 100%;
 }
-
-#noExiste {
-    height: 280px;
-    position: relative;
-    left: 25%;
-    margin-left: -55px;
-} 
 
 div{
     background-color: white;
 }
 
-#basado {
+#basado, #ofertas {
     font-size: 24px;
+    text-align: center;
+    width: 90%;
+    color: #666;
+    margin: 20px 0px;
 }
 
-#ofertas {
-   font-size: 24px;
+.iconos {
+    padding: 4px;
+    border-radius: 20px;
+    border: solid thin;
+    color: #39b54a;
+}
+
+article.productos {
+    background-color: white;
+    padding: 15px;
+    margin: 20px 0px;
+    overflow: auto;
 }
 
 .precios {
@@ -46,6 +109,7 @@ div{
 
 .descripciones {
     font-size: 16px;
+    color: #666;
 }
 
 p {
@@ -53,33 +117,113 @@ p {
     text-align: justify;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 ul {
     list-style-type: none;
-}
-
-li{
-    
-}
-
-h1 {
-
-}
-
-h3 {
-    text-align: center;
 }
 
 h6 {
     text-align: center;
 }
 
+.icoLu {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
+}
 
-/* pagina register.html */
+
+
+
+/* --------------------------------- */
+/* FOOTER  */
+
+footer {
+    background-color: white;
+    color: #666;
+    padding: 20px 5%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.piePagina {
+    margin: 20px 0px;
+}
+
+.copyright {
+    font-size: x-small;
+    text-align: center;
+}
+
+
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* LOGIN.HTML */
+
+.cajaLogin {
+    padding: 0px 20px;
+}
+
+.ingreso {
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
+#botonIngreso {
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0044AA;
+}
+
+#botonIngreso:hover {
+    background-color: #0022AA;
+}
+
+
+
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* REGISTER.HTML */
+
+#botonReseteo {
+    width: 100%;
+    border-style: none;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #AA0044;
+}
+
+#botonReseteo:hover {
+    background-color: #CC1155;
+}
+
 .regnegrita {
     font-weight: bold;
 }
+
+
+
+
+/* --------------------------------- */
+/* --------------------------------- */
+/* 404.HTML */
+
+#noExiste {
+    height: 280px;
+    position: relative;
+    left: 25%;
+    margin-left: -55px;
+} 
