@@ -22,4 +22,5 @@ Fecha | Descripción | Herramientas
 2/7 | Agregar CSS en vista mobile | CSS
 7/7 | Formularios | HTML
 14/7 | Organizando elementos | HTML Y CSS
-16/7 |  |
+16/7 | Posicionamiento con Flexbox | HTML, CSS-Flexbox
+21/7 |  |
