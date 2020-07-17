@@ -27,21 +27,37 @@ body{
 
 header {
     background-color: #EAC926;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; 
 }
 
 .logoMeli {
-    width: 50%;   
+    position: absolute;
+    width: 50%;  
+    align-self: start; 
+}
+
+.busqueda {
+    position: relative;
+    width: 46%;
+    left: 53%;
+    /* float: left; */
 }
 
 .form-control {
-    width: 50%;
+    width: 100%;
 }
 
 #menu {
-    text-align: center;
+    order: 1;
+    height: 60px;
     padding: 10px;
     margin: 20px 0px;
+    /* align-self: center; */
 }
+
+
 
 #butoMenu {
     background-color: #0044AA;
@@ -51,6 +67,12 @@ header {
     border-radius: 5px;
     font-size: 20px;
     cursor:pointer;
+}
+
+.icoLu {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
 }
 
 /* AVERIGUAR PORQ NO SE CAMBIA DE COLOR MIENTRAS HAGO HOVER SOBRE EL BOTÓN EN FIREFOX Y SI EN SAFARI Y PORQ NO APARECEN IMÁGENES EN UNO Y OTRO SI!!!! */
@@ -76,6 +98,13 @@ div{
     background-color: white;
 }
 
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
 #basado, #ofertas {
     font-size: 24px;
     text-align: center;
@@ -84,32 +113,74 @@ div{
     margin: 20px 0px;
 }
 
-.iconos {
-    padding: 4px;
-    border-radius: 20px;
-    border: solid thin;
-    color: #39b54a;
-}
-
-article.productos {
+.productos {
     background-color: white;
     padding: 15px;
     margin: 20px 0px;
     overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.imagen {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-self: center;
+}
+
+.iconos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    border-radius: 20px;
+    border: solid thin;
+    color: #39b54a;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    width: 30px;
+    align-items: center;
+    left: 85%;
+    bottom: -40px;
+
 }
 
 .precios {
     font-size: 18px;
+    width: 30%;
+    border-top: 1px solid #ebebeb;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -1.5%;
+
 }
 
 .descuentos{
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
+    border-top: 1px solid #ebebeb;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 10%;
+    right: -30%;
 }
 
 .descripciones {
     font-size: 16px;
     color: #666;
+    display: flex;
+    flex-wrap: wrap;
+    order: 3;
+    position: relative;
+
 }
 
 p {
@@ -123,12 +194,6 @@ ul {
 
 h6 {
     text-align: center;
-}
-
-.icoLu {
-    background-color: white;
-    border-radius: 4px;
-    border: solid thin;
 }
 
 
@@ -214,7 +279,25 @@ a {
     font-weight: bold;
 }
 
+.usuario {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.labb {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    padding-left: 50px;
+    position: relative;
+}
+
+.checks {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 100px;
+    position: absolute;
+}
 
 
 /* --------------------------------- */
