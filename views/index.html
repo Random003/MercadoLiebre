@@ -24,20 +24,25 @@
         <a href="/"><img class="logoMeli" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a>
       </section>
       
-      <nav class="busqueda">
-        <input class="form-control"  type="text" placeholder="Buscar productos, marcas y más..." aria-label="Search"><br>
-        <span class="icoLu"><i class="fas fa-search"></i></span>
-      </nav>  
+      <form class="busqueda">
+        <input class="form-control"  type="text" placeholder="Buscar productos" aria-label="Search">
+        <button type="submit" class="icoLu"><i class="fas fa-search"></i></button>
+        <!-- <span class="icoLu"><i class="fas fa-search"></i></span> -->
+      </form>  
 
-      <p class="compraCuotas"><h5><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h5></p>
+     
+
+      <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
 
 
       <nav id="menu">
         <button type="menu" id="butoMenu"><i class="fas fa-bars"></i></button>
       </nav>
+
       
       <!-- TIENE QUE ESTAR EN HIDDEN LA BARRA DE NAVEGACIÓN -->
       <!-- <nav hidden> -->
+      <!-- o es css display: none; -->
       <nav>  
         <ul>
           <!-- para linkear en la misma pagina donde dice ofertas -->
@@ -69,35 +74,51 @@
           <!-- use article para hacer los separadores por cada elemento y asi se pueda poner fondo de un color y no se aplique al fondo de cada elemento -->
           
           <img height="300px" src="/images/img-cafetera-moulinex.jpg" alt="cafetera" class="imagen">
-          <span class="iconos"><i col class="fas fa-truck" class="iconos"></i></span>
-          <p class="precios">$6.770</p>
-          <p class="descuentos">40% off</p>
-          <p class="descripciones"><b>Cafetera Moulinex Dolce Gusto</p>
+          <hr class="borderAbajo">
+          <div>
+           <span class="iconos"><i col class="fas fa-truck"></i></span>
+           <p class="precios">$6.770</p>
+           <p class="descuentos">40% off</p>
+           <p class="descripciones"><b>Cafetera Moulinex Dolce Gusto</p>
+          </div>
         </article>
+
 
         <article class="productos">
           <img height="300px" src="/images/img-macbook-pro-2019.jpg" alt="mac" class="imagen">
-          <span class="iconos"><i col class="fas fa-truck"></i></span>
-          <p class="precios">$150,970</p>
-          <p class="descuentos">10% off</p>
-          <p class="descripciones"><b>MacBook Pro 2019</p>
+          <hr class="borderAbajo">
+          <div>
+           <span class="iconos"><i col class="fas fa-truck"></i></span>
+           <p class="precios">$150,970</p>
+           <p class="descuentos">10% off</p>
+           <p class="descripciones"><b>MacBook Pro 2019</p>
+          </div>
         </article>
 
+
         <article class="productos">
-           <img height="300px" src="/images/img-samsung-galaxy-s10.jpg" alt="telefono" class="imagen">
+          <img height="300px" src="/images/img-samsung-galaxy-s10.jpg" alt="telefono" class="imagen">
+          <hr class="borderAbajo">
+          <div>
            <span class="iconos"><i col class="fas fa-truck"></i></span>
            <p class="precios">$89.410</p>
            <p class="descuentos">20% off</p>
            <p class="descripciones"><b>Teléfono Móvil Samsung Galaxy S10</p>
+          </div>
         </article>
 
+
         <article class="productos">
-            <img height="300px" src="/images/img-tv-samsung-smart.jpg" alt="televisor" class="imagen">
+          <img height="300px" src="/images/img-tv-samsung-smart.jpg" alt="televisor" class="imagen">
+          <hr class="borderAbajo">
+          <div>
             <span class="iconos"><i col class="fas fa-truck"></i></span>
             <p class="precios">$54.230</p>
             <p class="descuentos">40% off</p>
             <p class="descripciones"><b>SmartTV Samsung 43"</p>
+          </div>
         </article>
+
       </section>
 
       <section class="principal">
@@ -106,34 +127,50 @@
           <article class="productos">
             <!-- use article para hacer los separadores por cada elemento y asi se pueda poner fondo de un color y no se aplique al fondo de cada elemento -->
             
-            <img height="300px" src="/images/img-cafetera-moulinex.jpg" alt="cafetera"><br>
-            <span class="iconos"><i col class="fas fa-truck"></i></span>
-            <p class="precios">$6.770</p>
-            <p class="descuentos">40% off</p>
-            <p class="descripciones"><b>Cafetera Moulinex Dolce Gusto</p>
+            <img height="300px" src="/images/img-cafetera-moulinex.jpg" alt="cafetera" class="imagen">
+            <hr class="borderAbajo">
+            <div>
+             <span class="iconos"><i col class="fas fa-truck"></i></span>
+             <p class="precios">$6.770</p>
+             <p class="descuentos">40% off</p>
+             <p class="descripciones"><b>Cafetera Moulinex Dolce Gusto</p>
+            </div>
           </article>
   
-          <article class="productos">
-            <img height="300px" src="/images/img-macbook-pro-2019.jpg" alt="mac"><br>
-            <span class="iconos"><i col class="fas fa-truck"></i></span>
-            <p class="precios">$150,970</p>
-            <p class="descuentos">10% off</p>
-            <p class="descripciones"><b>MacBook Pro 2019</p>
-          </article>
   
           <article class="productos">
-             <img height="300px" src="/images/img-samsung-galaxy-s10.jpg" alt="mac"><br>
+            <img height="300px" src="/images/img-macbook-pro-2019.jpg" alt="mac" class="imagen">
+            <hr class="borderAbajo">
+            <div>
+             <span class="iconos"><i col class="fas fa-truck"></i></span>
+             <p class="precios">$150,970</p>
+             <p class="descuentos">10% off</p>
+             <p class="descripciones"><b>MacBook Pro 2019</p>
+            </div>
+          </article>
+  
+  
+          <article class="productos">
+            <img height="300px" src="/images/img-samsung-galaxy-s10.jpg" alt="telefono" class="imagen">
+            <hr class="borderAbajo">
+            <div>
              <span class="iconos"><i col class="fas fa-truck"></i></span>
              <p class="precios">$89.410</p>
              <p class="descuentos">20% off</p>
              <p class="descripciones"><b>Teléfono Móvil Samsung Galaxy S10</p>
+            </div>
           </article>
   
+  
           <article class="productos">
-              <img height="300px" src="/images/img-tv-samsung-smart.jpg" alt="televisor"><br>
+            <img height="300px" src="/images/img-tv-samsung-smart.jpg" alt="televisor" class="imagen">
+            <hr class="borderAbajo">
+            <div>
               <span class="iconos"><i col class="fas fa-truck"></i></span>
               <p class="precios">$54.230</p>
+              <p class="descuentos">40% off</p>
               <p class="descripciones"><b>SmartTV Samsung 43"</p>
+            </div>
           </article>
         </section>
     </main>

@@ -23,4 +23,5 @@ Fecha | Descripción | Herramientas
 7/7 | Formularios | HTML
 14/7 | Organizando elementos | HTML Y CSS
 16/7 | Posicionamiento con Flexbox | HTML, CSS-Flexbox
-21/7 |  |
+21/7 | Modificar el sitio para que sea adaptativo | Diseño Adaptativo
+23/7 | |

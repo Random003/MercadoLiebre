@@ -11,37 +11,47 @@
     <title>¡Hola! Ingresá tu usuario</title>
 </head>
 <body>
-    <header>
-        <h1><a href="/"><img class="logoMeli" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a></h1>
-          
-        <input class="form-control" type="text" placeholder="Buscar productos, marcas y más..." aria-label="Search"><br>
-        <span class="icoLu"><i class="fas fa-search"></i></span>
+  <header>
+    <section>
+      <a href="/"><img class="logoMeli" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a>
+    </section>
+    
+    <form class="busqueda">
+      <input class="form-control"  type="text" placeholder="Buscar productos" aria-label="Search">
+      <button type="submit" class="icoLu"><i class="fas fa-search"></i></button>
+      <!-- <span class="icoLu"><i class="fas fa-search"></i></span> -->
+    </form>  
+
+   
+
+    <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
+
+
+    <nav id="menu">
+      <button type="menu" id="butoMenu"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    
+    <!-- TIENE QUE ESTAR EN HIDDEN LA BARRA DE NAVEGACIÓN -->
+    <!-- <nav hidden> -->
+    <!-- o es css display: none; -->
+    <nav>  
+      <ul>
+        <!-- para linkear en la misma pagina donde dice ofertas -->
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="/oficialStores">Tiendas Oficiales</a></li>
+        <li><a href="/sell">Vender</a></li>
+        <li><a href="/help">Ayuda</a></li>
+      </ul>
+    
+      <ul>
+        <li><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></li>
+        <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="/cart">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
+      </ul>
+       </nav>
+    </header>
   
-        <h3><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
-  
-  
-  
-        <nav id="menu">
-          <button type="menu" id="butoMenu"><i class="fas fa-bars"></i></button>
-        </nav>
-        
-        <!-- TIENE QUE ESTAR EN HIDDEN LA BARRA DE NAVEGACIÓN -->
-        <!-- <nav hidden> -->
-        <nav>  
-          <ul>
-            <li>Ofertas</a></li>
-            <li><a href="/oficialStores">Tiendas Oficiales</a></li>
-            <li><a href="/sell">Vender</a></li>
-            <li><a href="/help">Ayuda</a></li>
-          </ul>
-        
-          <ul>
-            <li><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></li>
-            <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-            <li><a href="/cart">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
-          </ul>
-        </nav>
-      </header>
 
     
     <main>

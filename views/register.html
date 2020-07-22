@@ -11,37 +11,46 @@
     <title>Registrate en Mercado Liebre</title>
 </head>
 <body>
-    <header>
-        <h1><a href="/"><img class="logoMeli" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a></h1>
-          
-        <input class="form-control" type="text" placeholder="Buscar productos, marcas y más..." aria-label="Search"><br>
-        <span class="icoLu"><i class="fas fa-search"></i></span>
-  
-        <h3><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
-  
-  
-  
-        <nav id="menu">
-          <button type="menu" id="butoMenu"><i class="fas fa-bars"></i></button>
-        </nav>
-        
-        <!-- TIENE QUE ESTAR EN HIDDEN LA BARRA DE NAVEGACIÓN -->
-        <!-- <nav hidden> -->
-        <nav>  
-          <ul>
-            <li>Ofertas</a></li>
-            <li><a href="/oficialStores">Tiendas Oficiales</a></li>
-            <li><a href="/sell">Vender</a></li>
-            <li><a href="/help">Ayuda</a></li>
-          </ul>
-        
-          <ul>
-            <li><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></li>
-            <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-            <li><a href="/cart">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
-          </ul>
-        </nav>
-      </header>
+  <header>
+    <section>
+      <a href="/"><img class="logoMeli" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre"></a>
+    </section>
+    
+    <form class="busqueda">
+      <input class="form-control"  type="text" placeholder="Buscar productos" aria-label="Search">
+      <button type="submit" class="icoLu"><i class="fas fa-search"></i></button>
+      <!-- <span class="icoLu"><i class="fas fa-search"></i></span> -->
+    </form>  
+
+   
+
+    <p><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</p>
+
+
+    <nav id="menu">
+      <button type="menu" id="butoMenu"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    
+    <!-- TIENE QUE ESTAR EN HIDDEN LA BARRA DE NAVEGACIÓN -->
+    <!-- <nav hidden> -->
+    <!-- o es css display: none; -->
+    <nav>  
+      <ul>
+        <!-- para linkear en la misma pagina donde dice ofertas -->
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="/oficialStores">Tiendas Oficiales</a></li>
+        <li><a href="/sell">Vender</a></li>
+        <li><a href="/help">Ayuda</a></li>
+      </ul>
+    
+      <ul>
+        <li><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></li>
+        <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="/cart">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
+      </ul>
+     </nav>
+   </header>
 
 
     <main>
@@ -60,36 +69,57 @@
                 <label  for="fechaNacimiento">Fecha de Nacimiento</label><br>
                 <input class="ingreso" type="date" name="birthDate" id="birthDate">
             </p>
-
+              
             <p>
                 <input class="ingreso" type="domicilio" name="domicilio" id="domicilio" placeholder="Domicilio">
-            </p><br>
+            </p>
 
-            <p class="usuario">
-                <label for="perfilUsuario" class="regnegrita">Perfil del Usuario</label>
-                <p><label><input class="ingreso" type="radio" name="perfilUsuario" value="comprador" id="comprador">Comprador</label></p>
+            <p><label for="perfilUsuario" class="regnegrita">Perfil del Usuario</label></p><br>
+            <div class="usuario">
+                <p>
+                  <label class="profileUsuario"><input class="ingreso" type="radio" name="perfilUsuario" value="comprador" id="comprador">Comprador</label>
+                </p>
                 
-                <p><label><input class="ingreso" type="radio" name="perfilUsuario" value="vendedor" id="vendedor">Vendedor</label></p>
-            </p><br>
+                <p>
+                  <label class="profileUsuario"><input class="ingreso" type="radio" name="perfilUsuario" value="vendedor" id="vendedor">Vendedor</label>
+                </p>
+            </div><br>
 
-            <p class="usuario">
-                <label for="intereses" class="regnegrita">Categorías de Interés</label>
-                <!-- NAME es lo que agrupa a todos los campos osea mismo nombre en todos los del label, VALUE es lo que vas a recibir yo del otro lado como desarrollador, ID es lo que usas para el label osea interacción y javascript, TYPE es el tipo de elemento que se va a usar -->
-                <p><label class="labb"><input type="checkbox" name="interes" value="electro" id="electro" class="ingreso" class="checks">Electro</label></p>
 
-                <p><label class="labb"><input type="checkbox" name="interes" value="moda" id="moda" class="ingreso">Moda</label></p>
 
-                <p><label class="labb"><input type="checkbox" name="interes" value="hogar" id="hogar" class="ingreso">Hogar</label></p>
 
-                <p><label class="labb"><input type="checkbox" name="interes" value="jugueteria" id="jugueteria" class="ingreso">Juguetería</label></p>
 
-                <p><label class="labb"><input type="checkbox" name="interes" value="vidaSana" id="vidaSana"class="ingreso">Vida Sana</label></p>
-            </p><br>
+
+            <p><label for="intereses" class="regnegrita">Categorías de Interés</label></p><br>
+            <div class="usuario">
+              <!-- NAME es lo que agrupa a todos los campos osea mismo nombre en todos los del label, VALUE es lo que vas a recibir yo del otro lado como desarrollador, ID es lo que usas para el label osea interacción y javascript, TYPE es el tipo de elemento que se va a usar -->
+              <p>
+                  <input type="checkbox" value="electro" name="interes" id="electro">
+                  <label for="electro">Electro</label>
+              </p>
+              <p>
+                  <input type="checkbox" value="moda" name="interes" id="moda">
+                  <label for="moda">Moda</label>
+              </p>
+              <p>
+                  <input type="checkbox" value="hogar" name="interes" id="hogar">
+                  <label for="hogar">Hogar</label>
+              </p>
+              <p>
+                  <input type="checkbox" value="jugueteria" name="interes" id="jugueteria">
+                  <label for="juguetes">Juguetes</label>
+              </p>
+              <p>
+                  <input type="checkbox" value="vidaSana" name="interes" id="vidaSana">
+                  <label for="vidaSana">Vida sana</label>
+              </p>
+          </div><br>
+
 
             <p>
                 <label for="fotoUsuario" class="regnegrita">Foto de Usuario</label><br><br>
                 <input type="file" id="foto" name="foto" ></input> 
-            </p>
+            </p><br>
 
             <p>
                 <input type="password" name="password" id="password" placeholder="Contraseña" class="ingreso"><br>

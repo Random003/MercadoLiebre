@@ -1,6 +1,7 @@
 
 /* siempre hacer esto para que las cajas tengan el tamaño de la pantalla */
 * {
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -17,6 +18,8 @@
 body{
     background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -30,33 +33,43 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 0; 
+    overflow: auto;
 }
 
 .logoMeli {
-    position: absolute;
-    width: 50%;  
-    align-self: start; 
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: center;
+
 }
 
 .busqueda {
-    position: relative;
-    width: 46%;
+    width: 50vw;
     left: 53%;
-    /* float: left; */
 }
 
 .form-control {
     width: 100%;
 }
 
-#menu {
-    order: 1;
-    height: 60px;
-    padding: 10px;
-    margin: 20px 0px;
-    /* align-self: center; */
+.icoLu {
+    background-color: white;
+    border-radius: 4px;
+    border: solid thin;
 }
 
+#menu { 
+    padding: 10px;
+    margin: 20px 0px;
+    display: block;
+    position: relative;
+    margin-left: 42vw;
+    margin-right: 42vw;
+
+
+}
 
 
 #butoMenu {
@@ -69,15 +82,14 @@ header {
     cursor:pointer;
 }
 
-.icoLu {
-    background-color: white;
-    border-radius: 4px;
-    border: solid thin;
-}
+
+
+
 
 /* AVERIGUAR PORQ NO SE CAMBIA DE COLOR MIENTRAS HAGO HOVER SOBRE EL BOTÓN EN FIREFOX Y SI EN SAFARI Y PORQ NO APARECEN IMÁGENES EN UNO Y OTRO SI!!!! */
 #butoMenu:hover {
     background-color: #0022AA;
+    cursor: pointer;
 }
 
 
@@ -92,6 +104,7 @@ main {
 
 .homeBanner {
     width: 100%;
+    display: block;
 }
 
 div{
@@ -131,56 +144,50 @@ div{
     align-self: center;
 }
 
-.iconos {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
-    border-radius: 20px;
+.borderAbajo {
+    color: #ebebeb;
+    height: 1px;
     border: solid thin;
-    color: #39b54a;
-    z-index: 1;
-    position: relative;
-    justify-content: center;
-    width: 30px;
-    align-items: center;
-    left: 85%;
-    bottom: -40px;
+}
 
+.iconos {
+    color: #39b54a;
+    background-color: white;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 100%;
+    position: absolute;
+    top: -30%;
+    right: 10%;
+}
+
+.productos div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .precios {
+    padding: 5px;
     font-size: 18px;
-    width: 30%;
-    border-top: 1px solid #ebebeb;
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: -1.5%;
+    align-self: center;
 
 }
 
 .descuentos{
-    font-size: 16px;
     color: #39b54a;
-    width: 70%;
-    border-top: 1px solid #ebebeb;
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    bottom: 10%;
-    right: -30%;
+    padding: 5px;
+    font-size: 16px;
+    align-self: center;
 }
 
 .descripciones {
+    padding: 5px;
     font-size: 16px;
+    width: 100%;
     color: #666;
-    display: flex;
-    flex-wrap: wrap;
-    order: 3;
-    position: relative;
-
 }
 
 p {
@@ -221,6 +228,7 @@ a {
     font-size: x-small;
     text-align: center;
 }
+
 
 
 
@@ -280,24 +288,36 @@ a {
 }
 
 .usuario {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    background-color: #ebebeb;
 }
 
-.labb {
+.profileUsuario {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    display: block;
-    padding-left: 50px;
-    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 15px;
+    background-color: #ebebeb;
 }
 
-.checks {
+.usuario p {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    bottom: 100px;
-    position: absolute;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    
 }
+.usuario p input {
+    width: 20%;
+}
+
+
 
 
 /* --------------------------------- */
@@ -305,8 +325,44 @@ a {
 /* 404.HTML */
 
 #noExiste {
+    display: flex;  
+    position: sticky;
+    left: 45vw;
+    right: 55vw;
+    justify-content: center;   
+    flex-wrap: wrap;
     height: 280px;
-    position: relative;
-    left: 25%;
-    margin-left: -55px;
+    margin-right: auto;
+    margin-left: auto;
 } 
+
+.cuatroCientos {
+    margin: 30px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+
+
+
+
+/* .usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+} */
+
+
+/* .usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+} */
