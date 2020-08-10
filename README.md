@@ -24,4 +24,8 @@ Fecha | Descripción | Herramientas
 14/7 | Organizando elementos | HTML Y CSS
 16/7 | Posicionamiento con Flexbox | HTML, CSS-Flexbox
 21/7 | Modificar el sitio para que sea adaptativo | Diseño Adaptativo
-28/7 | |
+28/7 | Creación de Rutas | Rutas
+
+## Repositorio ejercicio sobre rutas:
+
+Visite <a href="https://github.com/Random003/MercadoLiebreRutas">aquí</a> para ver el repositorio del ejercicio sobre rutas de Mercado Liebre.
